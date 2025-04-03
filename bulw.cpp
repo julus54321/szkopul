@@ -1,14 +1,16 @@
+typedef long long ll;
+
 #include <bits/stdc++.h> 
 using namespace std;
 
 int main(){
 
-    int pol,lbulw;
+    ll pol,lbulw;
     cin>>pol;
 
-    vector<int> vec(pol);
+    vector<ll> vec(pol);
 
-    for (int x = 0; x < pol;x++)
+    for (ll x = 0; x < pol;x++)
     {
         cin >> vec[x];
     }
@@ -17,11 +19,11 @@ int main(){
 
     sort(vec.rbegin(), vec.rend());
 
-    int y = 0;
+    ll y = 0;
 
-    for (int i = 0;i < pol && lbulw > 0;i++)
+    for (ll i = 0;i < pol && lbulw > 0;i++)
     {   
-        int bdz = min(vec[i] , lbulw);
+        ll bdz = min(vec[i] , lbulw);
             
         y += bdz * bdz;
         lbulw -= bdz;

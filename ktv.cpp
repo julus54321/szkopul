@@ -1,15 +1,23 @@
+typedef long long ll;
+
 #include <bits/stdc++.h> 
 using namespace std;
 
 int main(){
 
-    int a,b,x,y;
+    ll a,b,x,y,c=0;
+
     cin>>a>>b>>x>>y;
-    int w = 0,h = 0;
-    for (w = 0;(w <= a) && (w = x*h/y);w++)
+
+    for (ll w=0;w<a;w++)
     {
-        cout << w;
+        ll wy = w*y;
+
+        ll h = wy/x;
+        if (h < b && h < w) c++;
     }
     
+    cout<<c<<endl;
+
     return 0;
 }

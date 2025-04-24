@@ -9,15 +9,14 @@ int main(){
 
     cin>>a>>b>>x>>y;
 
-    for (ll w=0;w<a;w++)
-    {
-        ll wy = w*y;
-
-        ll h = wy/x;
-        if (h < b && h < w) c++;
-    }
+    ll g = gcd(x, y);
+    x /= g;
+    y /= g;
     
-    cout<<c<<endl;
+
+    ll mk=min(a / x, b / y);
+
+    cout<<mk<<endl;
 
     return 0;
 }

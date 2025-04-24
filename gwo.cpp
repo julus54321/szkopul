@@ -2,6 +2,10 @@
 using namespace std;
 
 int main(){
+
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+
     int a,h,c;
     cin >> a >> h;
     map<int , int> fmap;

@@ -9,7 +9,7 @@ int main(){
     int a,c=0,cc=0,count=0;
     cin>>a;
 
-    for (int I=0;I<2;I++)
+    for (int I=0;I<a;I++)
     {
         cin>>x>>y>>z;
         c = x * 3600 + y * 60 + z;

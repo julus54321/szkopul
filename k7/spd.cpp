@@ -5,16 +5,14 @@ int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);
 
-    int a,b=0,c;
+    unsigned long long n,s=1;
+    cin >> n;
 
-    cin >> a;
-
-    for (int i = 0; i<a;i++) {
-        cin >> c;
-        b = max(b , c);
+    for(int i = n ;i>1;i-=2) {
+        s*=i;
     }
-
-    cout << b;
+    
+    cout << s;
 
     return 0;
 }
